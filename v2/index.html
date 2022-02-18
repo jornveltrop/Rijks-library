@@ -11,19 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="images/rijks-library-logo.svg">
+        <button>filter</button>
+    </header>
     <main>
-        <h1>Gezocht naar: </h1>
-        <section>
+        <section class="titels">
+            <h1>Gezocht naar: </h1>
+        </section>
+
+        <section class="resultaten">
             
         </section>
-    </main>
-    <footer>
+
         <form onsubmit="event.preventDefault(); return getAndRenderData()">
             <input type="text" placeholder="Search">
             <button type="submit">🔍</button>
         </form>
-    </footer>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>

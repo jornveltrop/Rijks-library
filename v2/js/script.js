@@ -1,4 +1,4 @@
-const sectionData = document.querySelector("section");
+const sectionData = document.querySelector(".resultaten");
 const aantalResults = 100;
 const imgSize = 600;
 
