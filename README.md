@@ -1,4 +1,4 @@
-# <img src="images/banner.jpg" width="100%" alt="banner">
+# <img src="content/banner.jpg" width="100%" alt="banner">
 
 ## Table of contents
   - [Table of contents](#table-of-contents)
