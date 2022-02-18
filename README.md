@@ -16,12 +16,12 @@
 Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een zoekopdracht kunstwerken op uit hun database. 
 
 ## Features
-|                                                            |     |
-| ---------------------------------------------------------- | --- |
-| 🔍  Zoek jouw favoriete kunstwerken uit de Rijksmuseum collectie!        | ✔  |
-| 🖼️  Lees informatie over de kunstwerken **COMING SOON**            | ✔  |
+|                                                                   |     |
+| ----------------------------------------------------------------- | --- |
+| 🔍  Zoek jouw favoriete kunstwerken uit de Rijksmuseum collectie! | ✔  |
+| 🖼️  Lees informatie over de kunstwerken **COMING SOON**           | ✔  |
 | 🎨  Filter op jouw voorkeuren **COMING SOON**                     | ✔  |
-| 🧑‍🎨  **en nog veel meer!**                                   | ✔   |
+| 🧑‍🎨  **en nog veel meer!**                                         | ✔   |
 
 ## Documentation
 De documentatie van deze app is te vinden in de [wiki](https://github.com/jornveltrop/Rijks-library/wiki) van deze repository.
