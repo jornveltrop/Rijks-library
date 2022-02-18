@@ -18,9 +18,9 @@ Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een z
 ## Features
 |                                                                   |     |
 | ----------------------------------------------------------------- | --- |
-| 🔍  Zoek jouw favoriete kunstwerken uit de Rijksmuseum collectie! | ✔  |
-| 🖼️  Lees informatie over de kunstwerken **COMING SOON**           | ✔  |
-| 🎨  Filter op jouw voorkeuren **COMING SOON**                     | ✔  |
+| 🔍  Zoek jouw favoriete kunstwerken uit de Rijksmuseum collectie! | ✔   |
+| 🖼️  Lees informatie over de kunstwerken **COMING SOON**           | ✔   |
+| 🎨  Filter op jouw voorkeuren **COMING SOON**                     | ✔   |
 | 🧑‍🎨  **en nog veel meer!**                                         | ✔   |
 
 ## Documentation
