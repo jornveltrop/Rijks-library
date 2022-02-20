@@ -10,6 +10,7 @@
 
 * { 
     box-sizing: border-box;
+    margin: 0;
 }
 
 html, body {
@@ -59,10 +60,23 @@ h1 {
     font-family: "Rijksmuseum Bold";
     text-transform: uppercase;
     margin: 0;
+    line-height: .8em;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: .03em;
+    margin: 0;
+    font-size: 1em;
 }
 
 section {
     display: flex;
+}
+
+article:nth-child(odd) {
+    transform: translateY(-300px);
 }
 
 .titels {
@@ -70,6 +84,13 @@ section {
     position: fixed;
     bottom: 3em;
     overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+.textMask {
+    height: 1.3em;
+    overflow: hidden;
 }
 
 .resultaten {
@@ -77,16 +98,16 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     padding-left: calc(30% - 3em);
+    transform: translateY(350px)
 }
 
 
 article {
-    width: 26em;
+    width: 23em;
     display: flex;
     flex-direction: column;
     height: fit-content;
     margin: 1em 5em;
-    flex-grow: 2;
     align-content: flex-start;
     align-self: flex-start;
 }

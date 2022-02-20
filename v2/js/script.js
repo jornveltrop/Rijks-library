@@ -2,6 +2,23 @@ const sectionData = document.querySelector(".resultaten");
 const aantalResults = 100;
 const imgSize = 600;
 
+function elementInViewport() {
+    const articles = document.querySelectorAll("article");
+    const onderT1 = document.querySelector("#onderT1");
+
+    articles.forEach(article => {
+        const bounding = article.getBoundingClientRect();
+        console.log(article.textContent);
+
+        if (bounding.top >= 125 && bounding.top <= 450) {
+            onderT1.innerHTML = article.textContent;
+        };
+    });
+}
+
+document.addEventListener('scroll', elementInViewport);
+
+
 function getAndRenderData () {
     
     //Verwijder huidige kunstwerken
@@ -42,7 +59,7 @@ function getAndRenderData () {
                 let scaledImg = number.webImage.url + imgSize;
                 sectionData.insertAdjacentHTML("beforeend",`
                     <article>
-                        <h2>${number.title}</h2>
+                        <h3>${number.title}</h3>
                         <img src="${scaledImg}">
                     </article
                 `)
