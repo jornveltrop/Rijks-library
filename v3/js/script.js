@@ -45,12 +45,14 @@ function setURL() {
     return getURL;
 }
 
+//Error handling
 function setError(error) {
     h2.innerHTML = "We kunnen momenteel geen kunstwerken ophalen.";
     h1.innerHTML = "Helaas..."; 
     console.log(error);
 }
 
+//Haal data op (op basis van zoekveld)
 function getData() {
     let data = fetch(setURL())
     .then(response => response.json())
@@ -98,3 +100,4 @@ function getAndRenderData() {
 }
 
 getAndRenderData();
+
