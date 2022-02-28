@@ -180,7 +180,7 @@ form {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 3.5em;
     }
 
     .resultaten {
@@ -200,22 +200,12 @@ form {
 }
 
 @media only screen and (max-width: 650px) {
-    main {
-        flex-direction: column;
-    }
-    
-    .titels {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
 
     h1 {
         font-size: 2em;
     }
 
     .resultaten article {
-        margin: 1em 0;
         width: 100%;
     }
 }
