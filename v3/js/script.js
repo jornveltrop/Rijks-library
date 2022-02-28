@@ -15,6 +15,17 @@ function deleteResults() {
     }
 }
 
+//Start loading animatie
+function setLoading() {
+    loader.classList.add("loaderDisplay");
+    sectionData.classList.add("resultsNoDisplay");
+
+    setTimeout(() => {
+        loader.classList.remove("loaderDisplay");
+        sectionData.classList.remove("resultsNoDisplay");
+    }, 3500);
+}
+
 //URL ophalen
 function setURL() {
     //Titel vullen met zoekterm
@@ -74,15 +85,6 @@ async function renderData(){
     }
 }
 
-function setLoading() {
-    loader.classList.add("loaderDisplay");
-    sectionData.classList.add("resultsNoDisplay");
-
-    setTimeout(() => {
-        loader.classList.remove("loaderDisplay");
-        sectionData.classList.remove("resultsNoDisplay");
-    }, 3500);
-}
 
 function getAndRenderData() {
     //Verwijder huidige kunstwerken
