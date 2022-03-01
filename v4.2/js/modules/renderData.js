@@ -43,7 +43,6 @@ export function imgRenderCheck(){
         });
     })).then(results => {
         if (results.every(res => res)) {
-            console.log('all images loaded successfully')
             stopLoading()
         }
         else
