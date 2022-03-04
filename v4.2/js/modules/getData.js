@@ -1,4 +1,5 @@
 import { setError } from './error.js';
+import { closeAside } from './ui.js';
 
 //URL ophalen
 export function setURL(inputField) {
@@ -7,6 +8,9 @@ export function setURL(inputField) {
     const aantalResults = 100;
     const apiKey = "AbH3UnTw";
     const apiURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${apiKey}`
+
+    //Reset if aside is open
+    closeAside();
 
     //Titel vullen met zoekterm
     h2.innerHTML = "Resultaten voor:";

@@ -6,6 +6,10 @@ export async function renderData(dataResults, inputField){
     const sectionData = document.querySelector(".resultaten");
     const h1 = document.querySelector(".titels h1");
     const h2 = document.querySelector(".titels h2");
+    const errorImg = document.querySelector(".resultaten > img");
+
+    //Reset errorImg
+    errorImg.classList.remove("visible");
 
     //Pak kunst objecten
     let objects = dataResults.artObjects;
@@ -14,6 +18,8 @@ export async function renderData(dataResults, inputField){
     if (objects.length == 0) {
         h1.innerHTML = "<span>'" + inputField + "'</span>"; 
         h2.innerHTML = "Helaas, geen resultaten voor:";
+        errorImg.classList.add("visible");
+        errorImg.src = "./images/empty_frame.png";
     } 
     else {
         //Genereer HTML blokken voor elk resultaat
@@ -32,7 +38,7 @@ export async function renderData(dataResults, inputField){
 
 //Check of alle IMG rendered
 export function imgRenderCheck(){
-    let allImages = document.querySelectorAll("img");
+    let allImages = document.querySelectorAll("article img");
 
     Promise.all(Array.from(allImages).map(img => {
         if (img.complete)

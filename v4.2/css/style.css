@@ -137,10 +137,28 @@ article {
     margin: 1em 5em;
     align-content: flex-start;
     align-self: flex-start;
+    cursor: pointer;
+}
+
+article:hover img {
+    transform: scale(1.01);
+    transition: .5s ease-in-out;
+}
+
+.errorImg {
+    padding-top: 7em;
+    width: 100%;
+    max-width: 23em;
+    display: none;
+}
+
+.visible {
+    display: inline;
 }
 
 article img {
     width: 100%;
+    transition: .5s ease-in-out;
 }
 
 article h3 {
@@ -150,17 +168,20 @@ article h3 {
 
 
 input {
-    padding: 1em 1.3em;
+    padding: 1em 3.2em 1em 1.3em;
     border: none;
-    border-radius: 1em;
+    border-radius: 5em;
+    height: 3.4em;
+
 }
 
 button {
     appearance: none;
     border: none;
-    border-radius: .6em;
     padding: .7em 1em;
-    margin-left: 1em;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 form {
@@ -172,6 +193,15 @@ form {
     flex-direction: row;
 }
 
+form button {
+    height: 3.4em;
+    width: 3.4em;
+    background: none;
+    border: 1px #000;
+    border-radius: 100%;
+    margin-left: -3.4em;
+    z-index: 2;
+}
 
 aside {
     background-color: #d55140;
@@ -203,6 +233,16 @@ aside nav {
     align-self: flex-end;
 }
 
+aside nav img {
+    width: 2.7em;
+    transition: .3s ease-in-out;
+}
+
+aside nav button:hover img {
+    transform: scale(1.07);
+    transition: .3s ease-in-out;
+}
+
 aside h2 {
     font-size: 1.7em;
     font-family: "Rijksmuseum Bold", sans-serif;
@@ -213,10 +253,36 @@ aside div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
 
 aside img {
     width: 100%;
+}
+
+aside .arrowIcon {
+    position: absolute;
+    bottom: 3em;
+    width: 3em;
+    filter: drop-shadow(0 0 10px #000);
+    animation: scrollHint 1.5s ease-in-out infinite alternate;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+aside .arrowVisible {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+@keyframes scrollHint {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(7px);
+    }
 }
 
 aside section {
