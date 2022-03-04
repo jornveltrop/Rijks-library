@@ -364,16 +364,4 @@ aside p {
         top: 6.5em;
         max-width: 100%;
     }
-
-    header {
-        padding: 1em 1em 1em 1em;
-    }
-
-    header::before {
-        width: calc(100% - 2em);
-    }
-
-    main {
-        padding: 6.5em 1em 1em 1em;
-    }
 }
