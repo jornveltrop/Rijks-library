@@ -58,7 +58,7 @@ main {
 h1 {
     display: block;
     width: 100%;
-    font-size: 5em;
+    font-size: clamp(2.5em, 6vw, 4.5em);
     font-family: "Rijksmuseum Bold", sans-serif;
     text-transform: uppercase;
     margin: 0;
@@ -322,7 +322,7 @@ aside p {
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: clamp(2.5em, 2vw, 7em);
     }
 
     .resultaten {
@@ -348,7 +348,7 @@ aside p {
 @media only screen and (max-width: 650px) {
 
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .resultaten article {

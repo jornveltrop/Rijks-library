@@ -3,7 +3,6 @@ import { renderData, imgRenderCheck, getDetailID } from './renderData.js'
 import { setURL, getData } from './getData.js'
 import { deleteResults, emptyField, closeAside } from './ui.js'
 import './vendor/routie.min.js'
-// import { searchField } from './ui.js'
 
 export function handleRoutes() {
   routie(
@@ -38,7 +37,6 @@ export function handleRoutes() {
 }
 
 //MAG DIT HIER?
-
 const closeAsideButton = document.querySelector('aside nav button');
 closeAsideButton.addEventListener('click', closeAside);
 
