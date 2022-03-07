@@ -4,6 +4,7 @@ const loader = document.querySelector(".loader");
 // ******* //
 // LOADING //
 // ******* //
+
 //Start loading animatie
 export function setLoading() {
     loader.classList.add("loaderDisplay");
@@ -16,9 +17,12 @@ export function stopLoading() {
     sectionData.classList.remove("resultsNoDisplay");
 }
 
+
+
 // ******* //
 //  ERROR  //
 // ******* //
+
 //Error handling
 export function setError(error, num, inputField) {
     const h1 = document.querySelector(".titels h1");
@@ -34,6 +38,11 @@ export function setError(error, num, inputField) {
     else if (num == 2) {
         h1.innerHTML = "<span>'" + inputField + "'</span>"; 
         h2.innerHTML = "Helaas, geen resultaten voor:";
+    }
+
+    else if (num == 3) {
+        h1.innerHTML = "Oeps..."; 
+        h2.innerHTML = "Er is iets mis gegaan";
     }
     
     errorImg.src = "./images/empty_frame.png"

@@ -274,12 +274,12 @@ aside .arrowIcon {
     filter: drop-shadow(0 0 10px #000);
     animation: scrollHint 1.5s ease-in-out infinite alternate;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 aside .arrowVisible {
     opacity: 1;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 @keyframes scrollHint {

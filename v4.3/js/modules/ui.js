@@ -1,3 +1,6 @@
+const asideSection = document.querySelector("aside > section");
+const arrowIcon = document.querySelector(".arrowIcon");
+
 //Reset inputField
 export function emptyField() {
     document.querySelector("input").value = "";
@@ -21,4 +24,15 @@ export function openAside() {
 export function closeAside() {
     const aside = document.querySelector("aside");
     aside.classList.remove("asideOpen");
+}
+
+//ArrowVisible 
+export function arrowVisible() {
+    let verschilScroll = asideSection.scrollHeight - asideSection.clientHeight;
+    if (verschilScroll > 30) {
+        arrowIcon.classList.add("arrowVisible")
+    }
+    else {
+        arrowIcon.classList.remove("arrowVisible")
+    }
 }
