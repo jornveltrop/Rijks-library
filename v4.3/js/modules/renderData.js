@@ -32,7 +32,7 @@ export async function renderData(dataResults, inputField){
                 <article id="${number.objectNumber}">
                     <h3>${number.title}</h3>
                     <img src="${scaledImg}">
-                </article
+                </article>
             `)
         });
     }
