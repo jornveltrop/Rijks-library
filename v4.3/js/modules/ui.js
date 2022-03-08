@@ -8,7 +8,7 @@ export function emptyField() {
 
 //Verwijder huidige kunstwerken
 export function deleteResults() {
-    const articleElements = document.querySelectorAll("section > article");
+    let articleElements = document.querySelectorAll("section > article");
     for (var i = 0, l = articleElements.length; i < l; i++) {
         articleElements[i].remove();
     }
@@ -26,7 +26,7 @@ export function closeAside() {
     aside.classList.remove("asideOpen");
 }
 
-//ArrowVisible 
+//Arrow Visible when scroll in detail page
 export function arrowVisible() {
     let verschilScroll = asideSection.scrollHeight - asideSection.clientHeight;
     if (verschilScroll > 30) {
