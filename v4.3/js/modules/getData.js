@@ -14,14 +14,14 @@ export function setURL(inputField) {
     closeAside();
 
     //Titel vullen met zoekterm
-    h2.innerHTML = "Resultaten voor:";
+    h2.textContent = "Resultaten voor:";
     h1.innerHTML = "<span>'" + inputField + "'</span>"; 
 
     //In geval geen input zoekbalk, laat uitgelicht zien
     if (inputField == 0) {
         inputField = "";
-        h1.innerHTML = "Uitgelicht"; 
-        h2.innerHTML = "";
+        h1.textContent = "Uitgelicht"; 
+        h2.textContent = "";
     }
 
     //URL instellen

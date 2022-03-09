@@ -31,18 +31,18 @@ export function setError(error, num, inputField) {
 
     // [error] Geen connectie
     if (error, num == 1) {
-        h2.innerHTML = "We kunnen momenteel geen kunstwerken ophalen.";
-        h1.innerHTML = "Helaas..."; 
+        h2.textContent = "We kunnen momenteel geen kunstwerken ophalen.";
+        h1.textContent = "Helaas..."; 
     } 
     // [error] Geen resultaten
     else if (num == 2) {
         h1.innerHTML = "<span>'" + inputField + "'</span>"; 
-        h2.innerHTML = "Helaas, geen resultaten voor:";
+        h2.textContent = "Helaas, geen resultaten voor:";
     }
 
     else if (num == 3) {
-        h1.innerHTML = "Oeps..."; 
-        h2.innerHTML = "Er is iets mis gegaan";
+        h1.textContent = "Oeps..."; 
+        h2.textContent = "Er is iets mis gegaan";
     }
     
     errorImg.src = "./images/empty_frame.png"

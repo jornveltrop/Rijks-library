@@ -66,10 +66,10 @@ export function imgRenderCheck(){
 
 export async function renderDetailData(detailData) {
     let objectData = detailData.artObject;
-    h2Aside.innerHTML = objectData.label.title;
+    h2Aside.textContent = objectData.label.title;
     imgAside.src = objectData.webImage.url + imgSize;
-    h3Aside.innerHTML = objectData.principalMaker + ", " + objectData.physicalMedium + ", " + objectData.dating.presentingDate;
-    pAside.innerHTML = objectData.label.description;    
+    h3Aside.textContent = objectData.principalMaker + ", " + objectData.physicalMedium + ", " + objectData.dating.presentingDate;
+    pAside.textContent = objectData.label.description;    
 }
 
 //Set detailID on rendered data
