@@ -9,9 +9,9 @@ export function emptyField() {
 //Verwijder huidige kunstwerken
 export function deleteResults() {
     let articleElements = document.querySelectorAll("section > article");
-    for (var i = 0, l = articleElements.length; i < l; i++) {
-        articleElements[i].remove();
-    }
+    articleElements.forEach(articleElement => {
+        articleElement.remove();
+    })
 }
 
 //Open side detail page
