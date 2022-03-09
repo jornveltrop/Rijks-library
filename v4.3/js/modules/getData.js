@@ -7,6 +7,7 @@ export function setURL(inputField) {
     const h1 = document.querySelector(".titels h1");
     const h2 = document.querySelector(".titels h2");
     const aantalResults = 100;
+    const apiKey = "AbH3UnTw";
     const apiURL = `https://www.rijksmuseum.nl/api/nl/collection/?key=${apiKey}`;
 
     //Reset if aside is open
@@ -30,7 +31,6 @@ export function setURL(inputField) {
 
 //Detail URL instellen
 export function setDetailURL(id) {
-    const apiKey = "AbH3UnTw";
     const detailURL = `https://www.rijksmuseum.nl/api/nl/collection/`;
     let getDetailURL = detailURL + `${id}?key=${apiKey}`;
     return getDetailURL;
