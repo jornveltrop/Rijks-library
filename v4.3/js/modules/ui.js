@@ -1,6 +1,3 @@
-const asideSection = document.querySelector("aside > section");
-const arrowIcon = document.querySelector(".arrowIcon");
-
 //Reset inputField
 export function emptyField() {
     document.querySelector("input").value = "";
@@ -28,6 +25,9 @@ export function closeAside() {
 
 //Arrow Visible when scroll in detail page
 export function arrowVisible() {
+    const asideSection = document.querySelector("aside > section");
+    const arrowIcon = document.querySelector(".arrowIcon");
+
     let verschilScroll = asideSection.scrollHeight - asideSection.clientHeight;
     if (verschilScroll > 30) {
         arrowIcon.classList.add("arrowVisible")
