@@ -64,6 +64,7 @@ export function imgRenderCheck(){
 //https://stackoverflow.com/questions/11071314/javascript-execute-after-all-images-have-loaded
 
 
+//Render detail data
 export async function renderDetailData(detailData) {
     let objectData = detailData.artObject;
     h2Aside.textContent = objectData.label.title;
