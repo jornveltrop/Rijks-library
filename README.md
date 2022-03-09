@@ -10,21 +10,28 @@
   - [Contributing](#contributing)
   - [License](#license)
 
+## [Live demo](https://jornveltrop.github.io/Rijks-library/v4.3)
+
+
 ## About
 **Rijks Library is een native web applicatie waarmee je kunstwerken van het Rijksmuseum kunt zoeken en bekijken.**
 
 Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een zoekopdracht kunstwerken op uit hun database. 
 
+<img src="content/interface.png" width="100%" alt="banner">
+
 ## Features
 |                                                                   |     |
 | ----------------------------------------------------------------- | --- |
 | 🔍  Zoek jouw favoriete kunstwerken uit de Rijksmuseum collectie! | ✔   |
-| 🖼️  Lees informatie over de kunstwerken **COMING SOON**           | ✔   |
+| 🖼️  Lees informatie over de kunstwerken.                          | ✔   |
 | 🎨  Filter op jouw voorkeuren **COMING SOON**                     | ✔   |
-| 🧑‍🎨  **en nog veel meer!**                                         | ✔   |
 
-## Documentation
-De documentatie van deze app is te vinden in de [wiki](https://github.com/jornveltrop/Rijks-library/wiki) van deze repository.
+
+## Activity Diagram
+
+## API documentation
+Voor deze web app heb ik gebruik gemaakt van de Rijksmuseum API. De documentatie van deze API is hier te vinden: [Rijksmuseum API](https://data.rijksmuseum.nl/object-metadata/api/)
 
 ## Installing
 Clone deze repository naar jouw lokale folder
@@ -37,6 +44,19 @@ Stel jouw API key in via de [Rijksstudio](https://www.rijksmuseum.nl/nl/rijksstu
 
 ## Author
 De maker van deze app is: [*Jorn Veltrop*](https://github.com/jornveltrop)
+
+## To-do
+|                     |  |
+| :------------------------------ | :---- |
+| API connectie                   | ✅    |
+| Data ophalen van  API           | ✅    |
+| Ideal state                     | ✅    |
+| Loading state                   | ✅    |
+| Error state                     | ✅    |
+| Detail page.                    | ✅    |
+| Reload button op error page     |       |
+| Suggesties tijdens zoeken       |       |
+| Favoriete kunstwerken opslaan   |       |
 
 ## Contributing
 Als je wilt bijdragen aan deze app kun je dat doen door middel van een [Issue](https://github.com/jornveltrop/Rijks-library/issues).
