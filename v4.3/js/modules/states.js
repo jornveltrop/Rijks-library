@@ -40,6 +40,7 @@ export function setError(error, num, inputField) {
         h2.textContent = "Helaas, geen resultaten voor:";
     }
 
+    //[error] Algemeen
     else if (num == 3) {
         h1.textContent = "Oeps..."; 
         h2.textContent = "Er is iets mis gegaan";
