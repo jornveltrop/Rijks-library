@@ -2,11 +2,6 @@ import { stopLoading, setError } from './states.js'
 import { arrowVisible, openAside } from './ui.js'
 import { getData, setDetailURL } from './getData.js';
 
-const imgSize = 2000;
-const h2Aside = document.querySelector("aside h2");
-const h3Aside = document.querySelector("aside h3");
-const imgAside = document.querySelector("aside > section img");
-const pAside = document.querySelector("aside p");
 
 //Render data in HTML
 export async function renderData(dataResults, inputField){
@@ -66,6 +61,12 @@ export function imgRenderCheck(){
 
 //Render detail data
 export async function renderDetailData(detailData) {
+    const imgSize = 2000;
+    const h2Aside = document.querySelector("aside h2");
+    const h3Aside = document.querySelector("aside h3");
+    const pAside = document.querySelector("aside p");
+    const imgAside = document.querySelector("aside > section img");
+
     let objectData = detailData.artObject;
     h2Aside.textContent = objectData.label.title;
     imgAside.src = objectData.webImage.url + imgSize;

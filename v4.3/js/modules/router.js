@@ -36,9 +36,9 @@ export function handleRoutes() {
   })
 }
 
-//MAG DIT HIER?
-const closeAsideButton = document.querySelector('aside nav button');
-closeAsideButton.addEventListener('click', closeAside);
+//Close Aside EventListener
+const closeAsideButton = document.querySelector("aside nav button");
+closeAsideButton.addEventListener("click", closeAside);
 
 
 //Set Routing on Input value
@@ -49,6 +49,6 @@ function searchField(event) {
   window.location.hash = searchValue;
 }
 
-const form = document.querySelector('form');
-form.addEventListener('submit', searchField);
+const form = document.querySelector("form");
+form.addEventListener("submit", searchField);
 
