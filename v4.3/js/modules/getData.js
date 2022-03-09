@@ -1,13 +1,13 @@
 import { setError } from './states.js';
 import { closeAside } from './ui.js';
 
+const apiKey = "AbH3UnTw";
 
 //URL ophalen
 export function setURL(inputField) {
     const h1 = document.querySelector(".titels h1");
     const h2 = document.querySelector(".titels h2");
     const aantalResults = 100;
-    const apiKey = "AbH3UnTw";
     const apiURL = `https://www.rijksmuseum.nl/api/nl/collection/?key=${apiKey}`;
 
     //Reset if aside is open

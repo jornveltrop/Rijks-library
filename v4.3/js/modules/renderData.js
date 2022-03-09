@@ -42,8 +42,8 @@ export function imgRenderCheck(){
         if (img.complete)
             return Promise.resolve(img.naturalHeight !== 0);
         return new Promise(resolve => {
-            img.addEventListener('load', () => resolve(true));
-            img.addEventListener('error', () => resolve(false));
+            img.addEventListener("load", () => resolve(true));
+            img.addEventListener("error", () => resolve(false));
         });
     })).then(results => {
         if (results.every(res => res)) {
@@ -51,7 +51,7 @@ export function imgRenderCheck(){
         }
         else
             setError(3);
-            console.log('some images failed to load, all finished loading');
+            console.log("some images failed to load, all finished loading");
     });
 }
 
