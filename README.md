@@ -30,6 +30,11 @@ Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een z
 
 ## Activity Diagram
 
+<img src="content/AD-Uitgelicht.png" width="80%" alt="Activity Diagram Uitgelicht">
+
+<img src="content/AD-Zoeken.png" width="80%" alt="Activity Diagram Zoeken">
+
+
 ## API documentation
 Voor deze web app heb ik gebruik gemaakt van de Rijksmuseum API. De documentatie van deze API is hier te vinden: [Rijksmuseum API](https://data.rijksmuseum.nl/object-metadata/api/)
 
@@ -53,7 +58,8 @@ De maker van deze app is: [*Jorn Veltrop*](https://github.com/jornveltrop)
 | Ideal state                     | ✅    |
 | Loading state                   | ✅    |
 | Error state                     | ✅    |
-| Detail page.                    | ✅    |
+| Detail page                     | ✅    |
+| Filter functie                  |       |
 | Reload button op error page     |       |
 | Suggesties tijdens zoeken       |       |
 | Favoriete kunstwerken opslaan   |       |
