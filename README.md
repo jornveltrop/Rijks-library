@@ -34,6 +34,8 @@ Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een z
 
 <img src="content/AD-Zoeken.png" width="80%" alt="Activity Diagram Zoeken">
 
+<img src="content/AD-Detail.png" width="80%" alt="Activity Diagram Detail">
+
 
 ## API documentation
 Voor deze web app heb ik gebruik gemaakt van de Rijksmuseum API. De documentatie van deze API is hier te vinden: [Rijksmuseum API](https://data.rijksmuseum.nl/object-metadata/api/)
