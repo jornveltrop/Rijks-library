@@ -4,9 +4,11 @@
   - [Table of contents](#table-of-contents)
   - [About](#about)
   - [Features](#features)
-  - [Documentation](#documentation)
+  - [Activity Diagram](#Activity-Diagram)
+  - [API documentation](#API-documentation)
   - [Installing](#installing)
   - [Author](#author)
+  - [To-do](#To-do)
   - [Contributing](#contributing)
   - [License](#license)
 
