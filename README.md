@@ -12,7 +12,7 @@
   - [Contributing](#contributing)
   - [License](#license)
 
-## [Live demo](https://jornveltrop.github.io/Rijks-library/v4.3)
+## [Live demo](https://jornveltrop.github.io/Rijks-library-client/v4.3)
 
 
 ## About
@@ -45,7 +45,7 @@ Voor deze web app heb ik gebruik gemaakt van de Rijksmuseum API. De documentatie
 ## Installing
 Clone deze repository naar jouw lokale folder
 ```
-git clone https://github.com/jornveltrop/Rijks-library.git
+git clone https://github.com/jornveltrop/Rijks-library-client.git
 ```
 <br>
 
@@ -69,7 +69,7 @@ De maker van deze app is: [*Jorn Veltrop*](https://github.com/jornveltrop)
 | Favoriete kunstwerken opslaan   |       |
 
 ## Contributing
-Als je wilt bijdragen aan deze app kun je dat doen door middel van een [Issue](https://github.com/jornveltrop/Rijks-library/issues).
+Als je wilt bijdragen aan deze app kun je dat doen door middel van een [Issue](https://github.com/jornveltrop/Rijks-library-client/issues).
 
 ## License
-Dit project valt onder de MIT [license](https://github.com/jornveltrop/Rijks-library/blob/main/LICENSE).
+Dit project valt onder de MIT [license](https://github.com/jornveltrop/Rijks-library-client/blob/main/LICENSE).
