@@ -16,7 +16,7 @@
 
 
 ## About
-**Rijks Library is een native web applicatie waarmee je kunstwerken van het Rijksmuseum kunt zoeken en bekijken.**
+**Rijks Library is een web applicatie waarmee je kunstwerken van het Rijksmuseum kunt zoeken en bekijken.**
 
 Deze web app maakt gebruik van de Rijksmuseum API. Deze haalt op basis van een zoekopdracht kunstwerken op uit hun database. 
 
